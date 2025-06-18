@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Faktorito</title>
+  <link rel="manifest" href="manifest.json" />
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🧾 Faktorito</h1>
+    <button id="addItem" title="درج ردیف جدید">+</button>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <label for="customerName">نام مشتری:</label>
+      <input id="customerName" type="text" placeholder="مثلاً: شرکت ایران" />
+
+      <div class="table-wrapper">
+        <table id="items">
+          <thead>
+            <tr>
+              <th>شرح</th><th>تعداد</th><th>قیمت واحد</th><th>جمع</th><th></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div class="totals">
+        <div>جمع کل:</div>
+        <div class="amount" id="totalAmount">0</div>
+        <div>تومان</div>
+      </div>
+
+      <div class="actions">
+        <button id="genPDF">ایجاد PDF</button>
+        <button id="clearAll">پاک‌سازی همه</button>
+      </div>
+    </section>
+
+    <section class="list-section">
+      <h2>فاکتورهای ذخیره‌شده</h2>
+      <ul id="invoicesList"></ul>
+    </section>
+  </main>
+
+  <!-- تبلیغات ساده -->
+  <div class="ad-container">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+         data-ad-slot="YYYYYYYYYY"
+         data-ad-format="auto"></ins>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script> (adsbygoogle = window.adsbygoogle||[]).push({}); </script>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
